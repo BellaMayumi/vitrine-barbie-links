@@ -9,7 +9,7 @@ body {
     background-color: rgb(255, 190, 233);
 }
 
-    /* CABEÇALHO */
+/* CABEÇALHO */
 
     header {
     background-color: rgb(252, 134, 203);
@@ -30,7 +30,7 @@ header section:first-child {
 }
 
 header small {
-    color: rgb(100, 5, 64);
+    color: rgb(150, 0, 80);
     font-size: 10px;
     font-weight: bold;
 }
@@ -57,9 +57,12 @@ header a {
     background-color: rgb(255, 220, 243);
     color: rgb(150, 0, 80);
     text-decoration: none;
-    padding: 11px 14px;
+    padding: 10px 12px;        /* Reduz a altura e largura interna */    
+    font-size: 13px;          /* Diminui o tamanho da fonte */
+    border-radius: 0px;
     font-family: Georgia, serif;
     font-weight: bold;
+    display: inline-block;
 }
 
 header a:hover {
@@ -67,7 +70,7 @@ header a:hover {
 }
 
 
-/* CONTEÚDO PRINCIPAL */
+/* CONTEÚDO MAIN */
 
 main {
     background-color: rgb(253, 228, 245);
@@ -81,8 +84,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 65px;
-    min-height: 320px;
+    padding: 30px 60px;
+    min-height: 250px;
 }
 
 #introducao article {
@@ -90,7 +93,7 @@ main {
 }
 
 #introducao small {
-    color: rgb(100, 5, 64);
+    color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
@@ -118,15 +121,17 @@ main {
     display: inline-block;
     margin-top: 5px;
     color: rgb(197, 22, 109);
-    font-weight: bold;
+    text-decoration: bold;
 }
 
+#introducao a:hover {
+    color: rgb(255, 220, 243);
+}
 
 /* IMAGEM */
-
 #introducao img {
     width: 420px;
-    height: 240px;
+    height: 230px;
     object-fit: cover;
 }
 
@@ -137,7 +142,7 @@ main {
 }
 
 #destaques > small {
-    color: rgb(100, 5, 64);
+    color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
@@ -145,7 +150,7 @@ main {
 #destaques > h2 {
     font-family: Georgia, serif;
     font-size: 22px;
-    color: rgb(40, 0, 25);
+    color: rgb(100, 5, 64);
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -169,7 +174,7 @@ main {
 .card h3 {
     font-family: Georgia, serif;
     font-size: 17px;
-    color: rgb(40, 0, 25);
+    color: rgb(100, 5, 64);
     margin-bottom: 10px;
 }
 
@@ -187,7 +192,7 @@ main {
 }
 
 #final small {
-    color: rgb(100, 5, 64);
+    color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
@@ -195,14 +200,21 @@ main {
 #final h2 {
     font-family: Georgia, serif;
     font-size: 22px;
-    color: rgb(40, 0, 25);
+    color: rgb(100, 5, 64);
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #final a {
+    background-color: rgb(249, 200, 232);
     color: rgb(197, 22, 109);
+    text-decoration: none;
+    padding: 10px 12px;        /* Reduz a altura e largura interna */    
+    font-size: 13px;          /* Diminui o tamanho da fonte */
+    border-radius: 0px;
+    font-family: Georgia, serif;
     font-weight: bold;
+    display: inline-block;
 }
 
 /* RODAPÉ */
@@ -210,27 +222,33 @@ main {
 footer {
     background-color: rgb(197, 22, 109);
     color: white;
-    min-height: 100px;
-    padding: 20px 75px;
+    min-height: 80px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 
 footer p {
     font-size: 11px;
     font-weight: bold;
-    white-space: nowrap;
+    font-size: 12px;
 }
 
-footer a {
+.footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-links a {
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    white-space: nowrap;
+    text-decoration: underline;
 }
 
 footer a:hover {
     color: rgb(255, 220, 243);
 }
+
