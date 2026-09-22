@@ -9,14 +9,16 @@ body {
     background-color: rgb(255, 190, 233);
 }
 
+
 /* CABEÇALHO */
+
 header {
     background-color: rgb(252, 134, 203);
     color: rgb(197, 22, 109);
     font-family: Georgia, serif;
     font-weight: bold;
-    padding: 25px 35px;
-    margin-bottom: 20px;
+    padding: 25px 45px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,16 +40,17 @@ h1 {
     font-family: Georgia, serif;
     color: rgb(197, 22, 109);
     text-align: left;
-    font-size: 32px;
+    font-size: 35px;
     margin-top: 5px;
-    margin-bottom: 0;
 }
 
+
 /* MENU */
+
 header section:last-child {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 header a {
@@ -56,31 +59,30 @@ header a {
     text-decoration: none;
     padding: 10px 12px;
     font-size: 13px;
-    border-radius: 0;
     font-family: Georgia, serif;
     font-weight: bold;
-    display: inline-block;
+    border-radius: 6px;
 }
 
 header a:hover {
     background-color: rgb(255, 190, 233);
 }
 
+
 /* CONTEÚDO MAIN */
+
 main {
     background-color: rgb(253, 228, 245);
-    padding: 40px 25px 0px;
+    padding: 0;
 }
 
 
 /* INTRODUÇÃO */
+
 #introducao {
     background-color: rgb(249, 181, 224);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 65px;
-    min-height: 265px;
+    padding: 40px 60px 50px;
+    width: 100%;
 }
 
 #introducao article {
@@ -95,45 +97,48 @@ main {
 
 #introducao h2 {
     font-family: Georgia, serif;
-    font-size: 34px;
+    font-size: 36px;
     color: rgb(197, 22, 109);
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 
 #introducao p {
     color: rgb(117, 13, 65);
     font-family: Georgia, serif;
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 15px;
 }
 
-/* DESTAQUES */
-#destaques {
-    padding: 30px 5px 25px;
+/* FILMES */
+
+#filmes {
+    padding: 30px 35px 10px;
 }
 
-#destaques > small {
+#filmes > small {
     color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
 
-#destaques > h2 {
+#filmes > h2 {
     font-family: Georgia, serif;
     font-size: 22px;
     color: rgb(197, 22, 109);
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+
 /* CARDS */
+
 #cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     justify-content: flex-start;
+    padding: 0 35px 60px; /* O 60px cria o espaço colorido interno */
+    background-color: rgb(253, 228, 245); /* Define a cor do espaço */
 }
 
 .card {
@@ -168,7 +173,9 @@ main {
     line-height: 1.4;
 }
 
+
 /* RODAPÉ */
+
 footer {
     background-color: rgb(197, 22, 109);
     color: white;
@@ -177,9 +184,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0px;
 }
 
-footer p { 
+footer p {
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -187,17 +195,20 @@ footer p {
 
 .footer-links {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     align-items: center;
 }
 
 .footer-links a {
-    color: white;
+    background-color: rgb(255, 220, 243);
+    color: rgb(150, 0, 80);
     font-size: 12px;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
 }
 
 .footer-links a:hover {
     color: rgb(255, 220, 243);
-}
+} 
