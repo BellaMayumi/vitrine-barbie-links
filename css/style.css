@@ -4,32 +4,22 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 190, 233);
 }
-
-
-/* CABEÇALHO */
 
 header {
     background-color: rgb(252, 134, 203);
     color: rgb(197, 22, 109);
     font-family: Georgia, serif;
     font-weight: bold;
-    padding: 25px 45px;
+    padding: 25px;
     margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
-}
-
-header section:first-child {
-    display: flex;
-    flex-direction: column;
 }
 
 header small {
@@ -46,52 +36,42 @@ h1 {
     margin-top: 5px;
 }
 
-
-/* MENU */
-
-header section:last-child {
+#menu {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-header a {
-    background-color: rgb(255, 220, 243);
+#menu a{
+    background-color:rgb(255, 220, 243);
     color: rgb(150, 0, 80);
     text-decoration: none;
-    padding: 10px 12px;        /* Reduz a altura e largura interna */    
-    font-size: 13px;          /* Diminui o tamanho da fonte */
+    padding: 10px;
+    font-size: 13px;
     font-family: Georgia, serif;
     font-weight: bold;
     border-radius: 6px;
 }
 
-header a:hover {
+#menu a:hover {
     background-color: rgb(255, 190, 233);
 }
 
-
-/* CONTEÚDO MAIN */
-
 main {
     background-color: rgb(253, 228, 245);
-    padding: 0;
 }
-
-
-/* INTRODUÇÃO */
 
 #introducao {
     background-color: rgb(249, 181, 224);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
-    min-height: 250px;
+    padding: 15px;
 }
 
-#introducao article {
-    width: 58%;
+#introducao article:first-child{
+    flex: 1;
+    padding: 20px;
 }
 
 #introducao small {
@@ -102,7 +82,7 @@ main {
 
 #introducao h2 {
     font-family: Georgia, serif;
-    font-size: 34px;
+    font-size: 38px;
     color: rgb(197, 22, 109);
     margin-top: 10px;
     margin-bottom: 15px;
@@ -119,40 +99,49 @@ main {
     color: rgb(197, 22, 109);
 }
 
-#introducao a {
-    display: inline-block;
-    margin-top: 5px;
-    color: rgb(197, 22, 109);
-    text-decoration: bold;
+#img-introducao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-#introducao a:hover {
-    color: rgb(255, 220, 243);
-}
-
-
-/* IMAGEM */
 
 #introducao img {
-    width: 420px;
-    height: 230px;
+    width: 100%;
+    height: 270px;
     object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    margin-right: 25px;
 }
 
+.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(255, 220, 243);
+    color: rgb(150, 0, 80);
+    text-decoration: none;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+}
 
-/* DESTAQUES */
+.btn-link:hover {
+    background-color: rgb(197, 22, 109);
+    color: #ffffff;
+}
 
 #destaques {
-    padding: 30px 5px 25px;
+    padding: 30px;
 }
 
-#destaques > small {
+#destaques small {
     color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
 
-#destaques > h2 {
+#destaques h2 {
     font-family: Georgia, serif;
     font-size: 22px;
     color: rgb(100, 5, 64);
@@ -160,19 +149,15 @@ main {
     margin-bottom: 20px;
 }
 
-
-/* CARDS */
-
 #cards {
     display: flex;
     gap: 15px;
-    justify-content: center;
 }
 
 .card {
     background-color: white;
-    width: 33%;
-    min-height: 150px;
+    flex: 1;
+    height: 150px;
     padding: 15px;
     border-radius: 18px;
     text-align: left;
@@ -192,11 +177,8 @@ main {
     font-weight: bold;
 }
 
-
-/* FINAL */
-
 #final {
-    padding: 5px 5px 30px;
+    padding: 30px;
 }
 
 #final small {
@@ -210,45 +192,45 @@ main {
     font-size: 22px;
     color: rgb(100, 5, 64);
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #final a {
+    display: inline-block;
     background-color: rgb(249, 200, 232);
     color: rgb(197, 22, 109);
     text-decoration: none;
-    padding: 10px 12px;        /* Reduz a altura e largura interna */    
-    font-size: 13px;          /* Diminui o tamanho da fonte */
-    border-radius: 0px;
+    padding: 10px;
+    font-size: 13px;
     font-family: Georgia, serif;
     font-weight: bold;
-    display: inline-block;
+    border-radius: 6px;
 }
 
-
-/* RODAPÉ */
+#final a:hover {
+    background-color: rgb(197, 22, 109);
+    color: #ffffff;
+}
 
 footer {
     background-color: rgb(197, 22, 109);
     color: white;
     min-height: 80px;
-    padding: 20px 40px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0px;
 }
 
 footer p {
     color: white;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 .footer-links {
     display: flex;
     gap: 12px;
-    align-items: center;
 }
 
 .footer-links a {
@@ -257,7 +239,7 @@ footer p {
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 8px;
     border-radius: 6px;
 }
 

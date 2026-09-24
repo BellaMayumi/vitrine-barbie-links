@@ -9,23 +9,17 @@ body {
     background-color: rgb(253, 228, 245);
 }
 
-/* CABEÇALHO */
 header {
     background-color: rgb(252, 134, 203);
     color: rgb(197, 22, 109);
     font-family: Georgia, serif;
     font-weight: bold;
-    padding: 25px 45px;
-    margin-bottom: 0;
+    padding: 25px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
-}
-
-header section:first-child {
-    display: flex;
-    flex-direction: column;
 }
 
 header small {
@@ -37,53 +31,44 @@ header small {
 h1 {
     font-family: Georgia, serif;
     color: rgb(197, 22, 109);
+    text-align: left;
     font-size: 35px;
     margin-top: 5px;
 }
 
-
-/* MENU */
-
-header section:last-child {
+#menu {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-header a {
+#menu a {
     background-color: rgb(255, 220, 243);
     color: rgb(150, 0, 80);
     text-decoration: none;
-    padding: 10px 12px;
+    padding: 10px;
     font-size: 13px;
     font-family: Georgia, serif;
     font-weight: bold;
     border-radius: 6px;
 }
 
-header a.ativo {
+#menu a:hover {
     background-color: rgb(255, 190, 233);
 }
-
-header a:hover {
-    background-color: rgb(255, 190, 233);
-}
-
-
-/* MAIN */
 
 main {
     background-color: rgb(253, 228, 245);
-    padding: 0;
 }
-
-
-/* INTRODUÇÃO */
 
 #introducao {
     background-color: rgb(249, 181, 224);
-    padding: 40px 60px 50px;
+    padding: 33px;
     width: 100%;
+}
+
+#introducao article {
+    width: 58%;
 }
 
 #introducao small {
@@ -94,7 +79,7 @@ main {
 
 #introducao h2 {
     font-family: Georgia, serif;
-    font-size: 36px;
+    font-size: 35px;
     color: rgb(197, 22, 109);
     margin-top: 8px;
     margin-bottom: 12px;
@@ -106,34 +91,24 @@ main {
     font-size: 15px;
 }
 
-
-/* PAINEL */
-
 #curiosidades {
-    padding: 40px 60px 60px;
+    padding: 30px;
     display: flex;
     justify-content: center;
 }
 
-
-/* CARD */
-
 .card-painel {
     background-color: white;
     width: 100%;
-    max-width: 1100px;
     padding: 30px;
     border-radius: 20px;
     display: flex;
-    gap: 35px;
+    gap: 30px;
     align-items: center;
 }
 
-
-/* IMAGEM */
-
 .painel-imagem {
-    width: 48%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,30 +128,28 @@ main {
     font-weight: bold;
 }
 
-/* FATOS */
 .painel-fatos {
-    width: 52%;
+    width: 55%;
 }
 
-.painel-fatos > small {
+.painel-fatos small {
     color: rgb(150, 0, 80);
     font-size: 11px;
     font-weight: bold;
 }
 
-.painel-fatos > h2 {
+.painel-fatos h2 {
     font-family: Georgia, serif;
     font-size: 24px;
     color: rgb(197, 22, 109);
-    margin-top: 4px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-/* ITEMS NUMERADOS (01, 02, 03) */
 .item-fato {
     background-color: rgb(253, 238, 248);
     border-radius: 12px;
-    padding: 16px 20px;
+    padding: 15px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -200,18 +173,17 @@ main {
 .item-fato p {
     font-size: 13px;
     color: rgb(117, 13, 65);
-    line-height: 1.4;
 }
 
-/* RODAPÉ */
 footer {
     background-color: rgb(197, 22, 109);
     color: white;
-    min-height: 75px;
-    padding: 20px 60px;
+    min-height: 80px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0px;
 }
 
 footer p {
@@ -223,6 +195,7 @@ footer p {
 .footer-links {
     display: flex;
     gap: 12px;
+    align-items: center;
 }
 
 .footer-links a {
@@ -231,7 +204,7 @@ footer p {
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 8px;
     border-radius: 6px;
 }
 
